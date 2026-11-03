@@ -59,8 +59,6 @@ El acomodo del texto está calibrado sobre la plantilla del formato 1A74-009-038
 - Qué campo se ve mal y una captura del PDF.
 - Si usaste mayúsculas automáticas y si imprimiste a tamaño real.
 
-**Antes de subir una captura, borra o cubre tu nombre, matrícula y cualquier otro dato personal.** No publiques pases reales.
-
 Limitaciones conocidas: los textos muy largos se reducen de tamaño para caber en su renglón, y los caracteres que la fuente del PDF no admite (algunos símbolos o emojis) se sustituyen por `?`.
 
 ## Desarrollo y contribuciones
