@@ -75,7 +75,7 @@ Para probar cambios, abre `index.html` localmente, genera un PDF con datos ficti
 
 ## Créditos y licencia
 
-Creado por **Dr. Humberto David Merino Zárate**, médico de urgencias del IMSS.
+Creado por **DaVmZ86**
 
 El PDF se genera con [pdf-lib](https://github.com/Hopding/pdf-lib) (licencia MIT, © Andrew Dillon), incluida dentro de `index.html`; su aviso de licencia está en [LICENSE](LICENSE).
 
