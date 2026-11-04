@@ -12,6 +12,10 @@
   <a href="https://davmz86.github.io/pase-imss2026/"><strong>Abrir la aplicación →</strong></a>
 </p>
 
+<p align="center">
+  <a href="https://davmz86.github.io/pase-imss2026/"><img src="assets/portada.png" alt="Pase IMSS: llena la Constancia de Pase y descarga el PDF" width="760"></a>
+</p>
+
 ---
 
 Pase IMSS es una herramienta web gratuita y de uso libre para trabajadoras y trabajadores del Instituto Mexicano del Seguro Social. Escribe tus datos una sola vez, elige el tipo de pase y obtén el formato oficial ya requisitado, con original y copia en la misma hoja tamaño carta.
@@ -43,7 +47,9 @@ Para el siguiente pase pulsa **Nuevo pase**: se limpian destino, motivo y folio,
 
 ## Tus datos y privacidad
 
-Todo ocurre dentro de tu navegador. La aplicación **no tiene servidor, no envía tus datos a ningún lado y no usa cuentas ni rastreadores**. El PDF se genera en tu propio dispositivo.
+Todo ocurre dentro de tu navegador. La aplicación **no tiene servidor, no envía tus datos a ningún lado y no usa cuentas**. El PDF se genera en tu propio dispositivo.
+
+Para saber cuántas personas usan la herramienta, la página incluye [GoatCounter](https://www.goatcounter.com/), un contador de visitas sin cookies que solo registra datos generales de la visita (página, navegador, país). Nunca recibe lo que escribes en el formulario ni el PDF.
 
 Tus datos de trabajador se guardan solo en el almacenamiento local del navegador (`localStorage`) para no tener que escribirlos cada vez. Si usas una computadora compartida, pulsa **Borrar** junto a "Datos del trabajador" al terminar.
 
