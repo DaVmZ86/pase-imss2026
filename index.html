@@ -14,34 +14,30 @@
 <meta property="og:url" content="https://davmz86.github.io/pase-imss2026/">
 <meta property="og:image" content="https://davmz86.github.io/pase-imss2026/assets/portada.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#13664f">
 <style>
   :root {
-    --bg: #f3f5f4; --card: #ffffff; --ink: #17201c; --muted: #5d6b65;
-    --line: #d6ddda; --accent: #13664f; --accent-ink: #ffffff; --accent-soft: #e3f1ec;
-    --danger: #b42318; --field: #fbfcfc;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #111614; --card: #19201d; --ink: #e8eeeb; --muted: #9aa8a2;
-      --line: #2e3934; --accent: #3fb48f; --accent-ink: #0b1310; --accent-soft: #1d332b;
-      --danger: #f97066; --field: #141a18;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #111614; --card: #19201d; --ink: #e8eeeb; --muted: #9aa8a2;
-    --line: #2e3934; --accent: #3fb48f; --accent-ink: #0b1310; --accent-soft: #1d332b;
-    --danger: #f97066; --field: #141a18;
+    /* Paleta verde (igual que el icono y la portada) */
+    --bg: #f0f6f3; --card: #ffffff; --ink: #17201c; --muted: #5a6b64;
+    --line: #d2e3dc; --accent: #13664f; --accent-ink: #ffffff; --accent-soft: #e3f1ec;
+    --accent-light: #1f8a6b; --accent-dark: #0a3d2f;
+    --danger: #b42318; --field: #fbfdfc;
+    color-scheme: light;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
     font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 120px; }
+  header { display: flex; gap: 14px; align-items: center; margin: 0 0 18px; padding: 16px 18px;
+    border-radius: 14px; color: #fff; border-bottom: 4px solid #3fb48f;
+    background: linear-gradient(135deg, var(--accent-light), var(--accent-dark)); }
+  header .logo { width: 48px; height: 48px; flex: none; }
   header h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -.01em; }
-  header p { margin: 0 0 20px; color: var(--muted); font-size: 14px; }
+  header p { margin: 0; color: #dcefe7; font-size: 14px; }
   section { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
     padding: 18px 18px 6px; margin-bottom: 14px; }
   section h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em;
-    color: var(--muted); margin: 0 0 14px; font-weight: 600; display: flex;
+    color: var(--accent); margin: 0 0 14px; font-weight: 600; display: flex;
     justify-content: space-between; align-items: center; gap: 8px; }
   section h2 small { text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 12px; }
   .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0 12px; }
@@ -80,7 +76,7 @@
   .btn:disabled { opacity: .6; cursor: wait; }
   .status { font-size: 13px; color: var(--muted); }
   .toast { position: fixed; left: 50%; bottom: 86px; transform: translateX(-50%);
-    background: var(--ink); color: var(--bg); padding: 9px 14px; border-radius: 8px;
+    background: var(--accent-dark); color: #fff; padding: 9px 14px; border-radius: 8px;
     font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; max-width: calc(100% - 32px); }
   .toast.show { opacity: 1; }
 </style>
@@ -88,8 +84,11 @@
 <body>
 <div class="wrap">
   <header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" class="logo"> <defs> <linearGradient id="logo-bg" x1="0" y1="0" x2="1" y2="1"> <stop offset="0" stop-color="#1a7a5f"/> <stop offset="1" stop-color="#0e4d3b"/> </linearGradient> </defs> <rect width="512" height="512" rx="112" fill="url(#logo-bg)"/> <g transform="translate(132 92)"> <rect x="22" y="22" width="226" height="306" rx="22" fill="#0b3b2d" opacity=".55"/> <rect width="226" height="306" rx="22" fill="#ffffff"/> <rect x="30" y="38" width="120" height="14" rx="7" fill="#13664f"/> <rect x="30" y="72" width="166" height="9" rx="4.5" fill="#cfdcd6"/> <rect x="30" y="96" width="140" height="9" rx="4.5" fill="#cfdcd6"/> <rect x="30" y="120" width="166" height="9" rx="4.5" fill="#cfdcd6"/> <line x1="18" y1="153" x2="208" y2="153" stroke="#9fb3aa" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/> <rect x="30" y="178" width="166" height="9" rx="4.5" fill="#cfdcd6"/> <rect x="30" y="202" width="120" height="9" rx="4.5" fill="#cfdcd6"/> <circle cx="44" cy="250" r="13" fill="none" stroke="#13664f" stroke-width="5"/> <path d="M36 242 L52 258 M52 242 L36 258" stroke="#13664f" stroke-width="5" stroke-linecap="round"/> <circle cx="92" cy="250" r="13" fill="none" stroke="#cfdcd6" stroke-width="5"/> </g> <circle cx="352" cy="364" r="70" fill="#3fb48f" stroke="#ffffff" stroke-width="12"/> <path d="M320 366 L343 389 L388 342" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+    <div>
     <h1>Constancia de Pase · IMSS</h1>
     <p>Llena los datos y descarga el formato 1A74-009-038 ya requisitado (original y copia en la misma hoja carta).</p>
+    </div>
   </header>
 
   <form id="frm" novalidate>
